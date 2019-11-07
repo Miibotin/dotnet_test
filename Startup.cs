@@ -10,6 +10,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.EntityFrameworkCore;
+using EtteplanTehtava.Models;
+using MySql.Data.EntityFrameworkCore.Extensions;
 
 namespace EtteplanTehtava
 {
@@ -26,6 +29,10 @@ namespace EtteplanTehtava
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            services.AddDbContext<MaintenanceContext>(options =>
+                options.UseMySql(Configuration.GetConnectionString("MaintenanceDb")));
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

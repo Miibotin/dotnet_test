@@ -2,7 +2,7 @@ using System;
 
 namespace EtteplanTehtava.Models
 {
-    public class MaintenanceUnit
+    public class Maintenance
     {
         public int Id { get; set; }
         public string Unit { get; set; }

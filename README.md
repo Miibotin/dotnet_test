@@ -31,7 +31,7 @@ These routes are tested with _Postman_. All routes need the starting point where
 
 ## Setting up database
 
-MySQL is used as a database. Name for the database and the table is up to you, but the column names are as followed:
+MySQL is used as a database. Name for the database and the table is up to you, but the column I used are as followed:
 
 * Id = int AUTO_INCREMENT NOT NULL PRIMARY_KEY
 * Unit = varchar(50) NOT NULL

@@ -5,7 +5,7 @@
 This is REST-API made with ASP<span>.NET CORE 3.0.
 For the database connection you only need to modify ```"MaintenanceDb"```  variable in appsettings.json with a proper database, user and password credentials.
 
-Clone the repository and head to the directory of this project. Run command ```dotnet run``` (in cmd, shell etc...) to run the app.
+Clone the repository and head to the directory of this project. Run command ```dotnet run``` (in cmd, bash etc...) to run the app.
 
 ## Essentials
 * .NET SDK 3.0

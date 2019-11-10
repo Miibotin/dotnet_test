@@ -40,3 +40,16 @@ MySQL is used as a database. Name for the database and the table is up to you, b
 * Added = datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
 * Updated = datetime
 * State = enum('OPEN', 'CLOSED')
+
+## Postman settings for PUT and POST
+
+Example below shows how you should write the Mainentance-object parameter in Postman as a raw JSON-values in Body-option. Date values are given inside the code, so you don't need to bother with them.
+```
+{
+    "unit": "Auto",
+    "desc": "Moottori rikki, jarrut hilaavat, sekä kaikki valot p*skana",
+    "importance": "CRITICAL",
+    "state": "OPEN"
+}
+```
+
